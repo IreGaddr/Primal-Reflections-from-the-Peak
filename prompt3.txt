@@ -1,0 +1,5 @@
+Read An IOTa of Truth.txt, and rotation.txt 
+You now have the core physical theory built upon the previous geometric concepts. This is the grand vision.
+1. Summarize the author's proposed explanations for a) the Standard Model of particles and b) the phenomenon of 'Dark Energy.'
+2. The author introduces a 'Doubly Linked Causal Evolution' (DLCE) equation. Evaluate this equation from a physics perspective. What is its most radical feature, and does it appear to be a fundamental postulate or is it left unjustified at this point?
+3. From a philosophy of science perspective, what is the single biggest weakness or 'red flag' in this framework as it currently stands? What is the core piece of the foundation that seems to be missing?

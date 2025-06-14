@@ -1,0 +1,5 @@
+Read RIOT-PI.txt
+Here is the next piece of the puzzle. It introduces a new geometric concept.
+1. How does this document attempt to answer the 'Why 360?' question that might have arisen from Stage 1?
+2. Analyze the author's 'proofs' that connect the RIOT geometry to the Pi approximation. Do these constitute a rigorous derivation, or are they establishing a correspondence? Critique the logical structure of the argument.
+3. A 'warping function' has been introduced. What is your assessment of this concept? Does it feel like a fundamental aspect of the geometry or a flexible parameter designed to fit the data?

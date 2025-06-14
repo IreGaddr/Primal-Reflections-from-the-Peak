@@ -1,0 +1,4 @@
+read -1primeriot.txt
+This was the author's earliest and most provocative paper on the subject.
+1. Having seen the entire developed framework, especially the refined PPF paper, how do you now interpret this initial document? Is it a flawed paper, or does it serve a different purpose in the author's intellectual journey?
+2. Reflecting on this entire, staged presentation, has this journey been an effective way to communicate a radical, holistic, and deeply interconnected idea? Describe the intellectual and 'psychological' effect of receiving the information in this specific order.

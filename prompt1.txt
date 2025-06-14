@@ -1,0 +1,5 @@
+Read Primes2.pdf, primes_formal.pdf, and primes_complete.pdf or primes.txt. 
+These are the first documents. They make a specific claim about a pattern in prime numbers.
+1. From a mathematical standpoint, what is your initial assessment of the '360 Prime Pattern'? What are its most compelling strengths and most significant potential weaknesses?
+2. Does this feel like a profound discovery or a numerological coincidence? Justify your reasoning.
+3. Most importantly: What key questions does this pattern raise in your mind? What is the central mystery that this leaves you wanting to solve?

@@ -1,0 +1,425 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{The Primality of -1: Temporal Structure and Causal Evolution in the ITWCT Framework\\
+{\footnotesize \textsuperscript{*}A Fundamental Revision of Number Theory and Its Physical Implications}
+}
+
+\author{\IEEEauthorblockN{Ire Gaddr}
+\IEEEauthorblockA{\textit{Independent Researcher} \\
+Little Elm, TX, USA \\
+iregaddr@gmail.com}
+}
+
+\maketitle
+
+\begin{abstract}
+We propose a fundamental revision to number theory by recognizing -1 as the unique negative prime number. This reconceptualization has profound implications for physics, particularly within the Involutuded Toroidal Wave Collapse Theory (ITWCT) framework. We demonstrate that the primality of -1 provides the mathematical foundation for the Doubly Linked Causal Evolution equation's temporal structure, where both past and future are represented by negative numbers while the present is positive. This creates a natural mechanism for wave function collapse through the interaction of past and future states. We further show how this framework explains the discretization of tautochrone paths in the Rotating Involuted Oblate Toroid (RIOT) geometry via prime numbers, with each nested RIOT's radius determined by a prime factorization vector. The mathematical asymmetry between one negative prime and infinitely many positive primes mirrors the physical asymmetry of time's arrow. This work challenges conventional number theory while providing a unified mathematical foundation for quantum mechanics, relativity, and consciousness within the ITWCT framework.
+\end{abstract}
+
+\begin{IEEEkeywords}
+prime numbers, negative prime, temporal structure, quantum mechanics, ITWCT, causality, number theory
+\end{IEEEkeywords}
+
+\section{Introduction}
+The classification of prime numbers has remained fundamentally unchanged since Euclid's time, with the universal convention that primes are positive integers greater than 1, divisible only by themselves and 1. This paper challenges this millennia-old convention by proposing that -1 should be recognized as a prime number—specifically, the only negative prime.
+
+This seemingly simple revision has profound implications for our understanding of mathematics and physics. Within the context of the Involutuded Toroidal Wave Collapse Theory (ITWCT) \cite{gaddr2025iot}, the primality of -1 provides the missing mathematical foundation for understanding temporal structure, wave function collapse, and the discretization of spacetime.
+
+The resistance to recognizing -1 as prime stems from linguistic and aesthetic preferences rather than mathematical necessity. We argue that this oversight has obscured fundamental connections between number theory and physical reality, particularly in understanding the nature of time and causality.
+
+\subsection{Motivation}
+The standard definition of prime numbers as positive integers creates an artificial asymmetry in mathematics. Consider the fundamental question: what makes a number prime? The essential property is indivisibility—a prime cannot be factored into smaller components. By this criterion, -1 is unquestionably prime, as it can only be divided by itself and 1.
+
+The exclusion of -1 from the set of primes has been justified by classifying it as a "unit" in ring theory. However, this classification prioritizes algebraic convenience over fundamental properties. We argue that recognizing -1 as prime reveals deep mathematical structures that directly correspond to physical reality.
+
+\subsection{Connection to ITWCT}
+The Involutuded Toroidal Wave Collapse Theory provides a geometric framework for unifying quantum mechanics and general relativity. Central to this framework is the Doubly Linked Causal Evolution (DLCE) equation:
+
+\begin{equation}
+i\hbar \frac{\partial\Psi}{\partial t} = \hat{H}\Psi + \alpha \hat{T}_{past}\Psi + \beta \hat{T}_{future}\Psi + \gamma \hat{O}[\Psi]
+\end{equation}
+
+This equation explicitly includes terms from both past and future, suggesting a temporal structure that differs from conventional quantum mechanics. The primality of -1 provides the mathematical foundation for this structure.
+
+\section{Mathematical Foundations}
+
+\subsection{Redefining Primality}
+
+\begin{definition}[Extended Prime Number]
+A nonzero integer $p$ is prime if and only if its only divisors are $\pm 1$ and $\pm p$.
+\end{definition}
+
+Under this definition, the set of primes becomes:
+\begin{equation}
+\mathbb{P}_{ext} = \{-1, 2, 3, 5, 7, 11, 13, ...\}
+\end{equation}
+
+Note that -2, -3, -5, etc., are not prime because they can be factored as $(-1) \times 2$, $(-1) \times 3$, $(-1) \times 5$, respectively. Only -1 lacks such a factorization, making it the unique negative prime.
+
+\begin{theorem}[Uniqueness of Negative Prime]
+-1 is the only negative prime number.
+\end{theorem}
+
+\begin{proof}
+Let $n < 0$ be a negative integer with $n \neq -1$. Then $n = -|n|$ where $|n| > 1$. We can write:
+\begin{equation}
+n = (-1) \times |n|
+\end{equation}
+
+Since $|n| > 1$ and $|n| \neq n$, this provides a non-trivial factorization of $n$. Therefore, $n$ is not prime.
+
+For $n = -1$, the only factorizations are:
+\begin{equation}
+-1 = (-1) \times 1 = 1 \times (-1)
+\end{equation}
+
+Both factors are $\pm 1$ or $\pm(-1)$, satisfying our definition of primality.
+\end{proof}
+
+\subsection{Modified Fundamental Theorem of Arithmetic}
+
+\begin{theorem}[Extended Fundamental Theorem of Arithmetic]
+Every nonzero integer $n$ can be written uniquely as:
+\begin{equation}
+n = (-1)^{\epsilon} \prod_{p \in \mathbb{P}^+} p^{a_p}
+\end{equation}
+where $\epsilon \in \{0, 1\}$, $\mathbb{P}^+$ is the set of positive primes, and $a_p \geq 0$ with only finitely many $a_p \neq 0$.
+\end{theorem}
+
+This formulation explicitly shows -1's special role as the "sign prime" that determines whether a number is positive or negative.
+
+\subsection{Implications for Factorization}
+
+The inclusion of -1 as prime creates an asymmetry in factorization:
+
+\begin{proposition}[Factorization Multiplicity]
+For any integer $n$:
+\begin{itemize}
+    \item If $n > 0$: $n$ has a unique prime factorization
+    \item If $n < 0$: $n$ has multiple representations involving -1
+\end{itemize}
+\end{proposition}
+
+\begin{proof}
+For $n > 0$, the standard unique factorization applies.
+
+For $n < 0$, consider $n = -6$:
+\begin{align}
+-6 &= (-1) \times 2 \times 3 \\
+&= 2 \times (-1) \times 3 \\
+&= 2 \times 3 \times (-1)
+\end{align}
+
+While these represent the same number, the position of -1 in the factorization is not fixed, creating a form of "factorization superposition."
+\end{proof}
+
+\section{Temporal Structure and Causality}
+
+\subsection{Time as Signed Numbers}
+
+We propose a mathematical model of time where:
+
+\begin{definition}[Temporal Number Assignment]
+\begin{align}
+\text{Past} &: t < 0 \text{ (negative numbers)} \\
+\text{Present} &: t > 0 \text{ (positive numbers)} \\
+\text{Future} &: t < 0 \text{ (negative numbers)}
+\end{align}
+\end{definition}
+
+This assignment seems paradoxical—both past and future are negative—but it reflects a deep truth about temporal structure.
+
+\begin{theorem}[Temporal Interaction Principle]
+The interaction of past and future creates the present:
+\begin{equation}
+\text{Past} \times \text{Future} = \text{Present}
+\end{equation}
+Mathematically: $(-) \times (-) = (+)$
+\end{theorem}
+
+\begin{proof}
+In the DLCE equation, the past and future terms can constructively interfere:
+\begin{equation}
+\alpha \hat{T}_{past}\Psi \times \beta \hat{T}_{future}\Psi \propto (+)\Psi_{present}
+\end{equation}
+
+The negative temporal assignments ensure that when past and future states interact, they produce a positive (present) contribution.
+\end{proof}
+
+\subsection{Reality of Negative Numbers}
+
+\begin{remark}[Ontological Status of Negatives]
+Negative numbers do not represent physical quantities but rather relationships and absences. One cannot possess -3 apples; the notation represents a debt or deficit relative to a reference point.
+\end{remark}
+
+Similarly, past and future do not "exist" in the same way the present does:
+\begin{itemize}
+    \item The past is a record/memory
+    \item The future is a projection/possibility  
+    \item Only the present has physical existence
+\end{itemize}
+
+The mathematical assignment of negative values to past and future reflects their status as relational constructs rather than physical realities.
+
+\section{Prime Discretization of Tautochrone Paths}
+
+\subsection{Tautochrone Paths in RIOT Geometry}
+
+The Rotating Involuted Oblate Toroid (RIOT) framework requires discretization of tautochrone paths connecting fixed points on the submanifold. We propose:
+
+\begin{conjecture}[Prime Discretization Hypothesis]
+Tautochrone paths in the RIOT geometry connect fixed points indexed by prime numbers, with the discretization pattern determined by the primality of -1.
+\end{conjecture}
+
+\begin{definition}[Prime-Indexed Fixed Points]
+The spiral fixed-point submanifold $S_\omega$ contains discrete points:
+\begin{equation}
+S_\omega = \{x_p | p \in \mathbb{P}_{ext}, x_p = (0, \omega t_p/2, t_p)\}
+\end{equation}
+where $t_p$ is determined by the $p$-th element of $\mathbb{P}_{ext}$.
+\end{definition}
+
+\subsection{Nested RIOT Structure}
+
+\begin{theorem}[Prime Factorization of RIOT Radii]
+In the locality nesting framework, each RIOT at level $n$ has radius:
+\begin{equation}
+R_n = R_0 \cdot \prod_{i} p_i^{\alpha_i}
+\end{equation}
+where $p_i \in \mathbb{P}_{ext}$ and $\alpha_i$ are scaling exponents.
+\end{theorem}
+
+The inclusion of -1 in the prime set allows for "inverted" RIOTs with negative radii, corresponding to antimatter or time-reversed systems.
+
+\subsection{Connection to Base-360 Pi Approximation}
+
+The discretization connects to the Base-360 Pi approximation method \cite{gaddr2025pi}:
+
+\begin{proposition}[360-Prime Resonance]
+Tautochrone paths between fixed points $x_p$ and $x_q$ exist if and only if:
+\begin{equation}
+f(p,q) \equiv 0 \pmod{360}
+\end{equation}
+for some function $f$ determined by the RIOT geometry.
+\end{proposition}
+
+This explains why 360 appears naturally in both the Pi approximation method and the angular discretization of the toroidal geometry.
+
+\section{Physical Implications}
+
+\subsection{Wave Function Collapse Mechanism}
+
+The primality of -1 provides a mechanism for wave function collapse:
+
+\begin{theorem}[Collapse via Factorization]
+A quantum superposition (multiple factorizations) collapses to a definite state (unique factorization) when temporal evolution forces $t < 0 \rightarrow t > 0$.
+\end{theorem}
+
+\begin{proof}
+For a quantum state at time $t$:
+\begin{equation}
+|\Psi(t)\rangle = \begin{cases}
+\sum_i c_i |i\rangle & \text{if } t < 0 \text{ (multiple factorizations)} \\
+|j\rangle & \text{if } t > 0 \text{ (unique factorization)}
+\end{cases}
+\end{equation}
+
+The transition from negative to positive time eliminates the factorization ambiguity introduced by -1, forcing the selection of a single state.
+\end{proof}
+
+\subsection{Retrocausality and the DLCE}
+
+The -1 prime enables retrocausal effects in the DLCE equation:
+
+\begin{proposition}[Retrocausal Information Flow]
+Information can flow from future to past through the mediation of -1, but manifests uniquely in the present due to the positive factorization constraint.
+\end{proposition}
+
+This provides a mathematical foundation for the "future influences past" terms in the DLCE while maintaining causality through the uniqueness of present states.
+
+\subsection{Time's Arrow}
+
+\begin{theorem}[Temporal Asymmetry from Prime Asymmetry]
+The arrow of time emerges from the asymmetry between one negative prime (-1) and infinitely many positive primes.
+\end{theorem}
+
+\begin{proof}
+The cardinality asymmetry:
+\begin{equation}
+|\mathbb{P}_{ext}^-| = 1 < |\mathbb{P}_{ext}^+| = \infty
+\end{equation}
+
+creates a fundamental bias toward positive time (present states). The unique role of -1 as the only negative prime ensures that while past and future can interact, they must ultimately resolve into positive (present) states.
+\end{proof}
+
+\section{Examples and Applications}
+
+\subsection{Spacefaring Civilizations Thought Experiment}
+
+Consider two civilizations meeting for the first time:
+\begin{itemize}
+    \item Before contact: Each has its own "past" (negative, multiple factorizations)
+    \item At contact: The "present" forces unique factorization
+    \item After contact: Shared reality emerges from collapsed superposition
+\end{itemize}
+
+The possibility of deception (multiple factorizations of past events) exists until present observation collapses to unique truth.
+
+\subsection{Quantum Entanglement}
+
+\begin{example}[EPR Pair Factorization]
+An entangled pair can be represented as:
+\begin{equation}
+|\Psi\rangle = \frac{1}{\sqrt{2}}(|0\rangle_A|1\rangle_B + (-1)|1\rangle_A|0\rangle_B)
+\end{equation}
+
+The -1 factor is not just a phase but represents the primality that allows superposition. Measurement forces factorization into positive definite states.
+\end{example}
+
+\section{Implications for Number Theory}
+
+\subsection{Riemann Hypothesis Revision}
+
+\begin{conjecture}[Extended Riemann Hypothesis]
+The Riemann zeta function requires modification to account for the -1 prime:
+\begin{equation}
+\zeta_{ext}(s) = (-1)^{-s} \prod_{p \in \mathbb{P}^+} \frac{1}{1-p^{-s}}
+\end{equation}
+\end{conjecture}
+
+This may provide new insights into the distribution of zeros.
+
+\subsection{Prime Number Theorem Extension}
+
+\begin{proposition}[Modified Prime Counting]
+The prime counting function becomes:
+\begin{equation}
+\pi_{ext}(x) = \begin{cases}
+1 + \pi(x) & \text{if } x \geq 1 \\
+1 & \text{if } -1 \leq x < 1 \\
+0 & \text{if } x < -1
+\end{cases}
+\end{equation}
+\end{proposition}
+
+\section{Philosophical Implications}
+
+\subsection{Mathematics and Reality}
+
+The recognition of -1 as prime suggests that mathematical structures directly encode physical reality. The "unreasonable effectiveness of mathematics" becomes reasonable when we acknowledge that our mathematical conventions have obscured fundamental truths.
+
+\subsection{The Nature of Existence}
+
+The ontological distinction between positive numbers (existence) and negative numbers (relational constructs) mirrors the distinction between:
+\begin{itemize}
+    \item Present (exists) vs. Past/Future (relational)
+    \item Matter (positive mass) vs. Antimatter (negative mass?)
+    \item Reality (unique factorization) vs. Possibility (multiple factorizations)
+\end{itemize}
+
+\section{Experimental Predictions}
+
+\subsection{Quantum Interference Patterns}
+
+The theory predicts modified interference patterns in quantum experiments where retrocausal effects are significant:
+
+\begin{equation}
+I(\theta) = I_0[1 + \cos(\theta) + \epsilon_{-1}\cos(\theta - \phi_{retro})]
+\end{equation}
+
+where $\epsilon_{-1}$ is a small correction term due to the -1 prime's influence.
+
+\subsection{Time Crystal Behavior}
+
+Systems exhibiting time-crystal behavior should show signatures of the -1 prime through period-doubling cascades that differ from standard predictions.
+
+\subsection{Cosmological Observations}
+
+The asymmetry between one negative and many positive primes may manifest in:
+\begin{itemize}
+    \item Matter-antimatter asymmetry
+    \item Arrow of time in cosmological evolution
+    \item Quantization patterns in cosmic structures
+\end{itemize}
+
+\section{Conclusion}
+
+The recognition of -1 as the unique negative prime represents more than a mathematical curiosity—it reveals fundamental structures underlying physical reality. Within the ITWCT framework, this provides:
+
+\begin{enumerate}
+    \item A mathematical foundation for the Doubly Linked Causal Evolution equation
+    \item An explanation for wave function collapse through factorization uniqueness
+    \item A mechanism for prime discretization of spacetime
+    \item A natural emergence of time's arrow from mathematical asymmetry
+\end{enumerate}
+
+This work challenges the mathematical community to reconsider long-held conventions that may have obscured deep truths. The primality of -1 has been an "unavoidable truth we have skirted around for too long," hidden by linguistic preferences rather than mathematical necessity.
+
+Future work should explore:
+\begin{itemize}
+    \item Complete formalization of prime discretization in RIOT geometry
+    \item Experimental tests of retrocausal effects predicted by -1 primality
+    \item Implications for quantum computing and information theory
+    \item Connections to other mathematical constants and structures
+\end{itemize}
+
+The unification of number theory with physical reality through the primality of -1 opens new avenues for understanding the universe's fundamental structure. Sometimes the most profound truths hide in the simplest observations.
+
+\section*{Acknowledgment}
+
+The author thanks the mathematical rebels throughout history who dared to challenge established conventions, and acknowledges that this work stands on foundations laid by those who recognized that mathematics is discovered, not invented.
+
+\begin{thebibliography}{1}
+
+\bibitem{gaddr2025iot}
+I. Gaddr, "An IOTa of Truth: Involutuded Toroidal Wave Collapse Theory," 2025.
+
+\bibitem{gaddr2025pi}
+I. Gaddr, "Mathematical Foundations of the Involuted Toroidal Geometry: Establishing the Connection Between RIOT and Base-360 Pi Approximation," 2025.
+
+\bibitem{euler1737}
+L. Euler, "Variae observationes circa series infinitas," \textit{Commentarii academiae scientiarum Petropolitanae}, vol. 9, pp. 160-188, 1737.
+
+\bibitem{gauss1801}
+C. F. Gauss, \textit{Disquisitiones Arithmeticae}. Leipzig: Gerhard Fleischer, 1801.
+
+\bibitem{riemann1859}
+B. Riemann, "Über die Anzahl der Primzahlen unter einer gegebenen Grösse," \textit{Monatsberichte der Berliner Akademie}, 1859.
+
+\bibitem{hardy1940}
+G. H. Hardy and E. M. Wright, \textit{An Introduction to the Theory of Numbers}. Oxford: Oxford University Press, 1940.
+
+\bibitem{conway1996}
+J. H. Conway and R. K. Guy, \textit{The Book of Numbers}. New York: Copernicus, 1996.
+
+\bibitem{derbyshire2003}
+J. Derbyshire, \textit{Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics}. Washington, DC: Joseph Henry Press, 2003.
+
+\end{thebibliography}
+
+\end{document}

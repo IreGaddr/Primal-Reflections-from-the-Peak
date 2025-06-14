@@ -1,0 +1,287 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{bm}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{float}
+
+\geometry{margin=1in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{\textbf{Physics-Prime Factorization: \\ A Quantum-Inspired Extension of Number Theory}}
+\author[1]{Ire Gaddr}
+\affil[1]{Independent Researcher, Little Elm, TX, USA}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We introduce Physics-Prime Factorization (PPF), a novel extension of classical number theory designed to model quantum mechanical phenomena through the structure of integer factorization. Rather than revising standard number theory, PPF operates as a parallel framework where -1 is recognized as the unique "Sign Prime," creating a factorization state space that mirrors quantum superposition. This approach preserves the utility of unique prime factorization for classical applications while providing a richer mathematical structure for modeling physical reality. We demonstrate how negative integers naturally possess larger factorization state spaces, corresponding to uncollapsed quantum states, while positive integers exhibit constrained state spaces representing collapsed, observed states. The Extended Fundamental Theorem of Arithmetic (EFTA) establishes that while individual factorizations may not be unique in PPF, the complete factorization state space for any integer is uniquely determined. This framework offers new perspectives on the mathematical foundations of quantum mechanics and the relationship between number theory and physical reality.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{The Success of Classical Number Theory}
+
+The Fundamental Theorem of Arithmetic stands as one of mathematics' most elegant achievements, establishing that every integer greater than 1 can be uniquely factored into prime numbers. This uniqueness property has proven invaluable across mathematics, from cryptography to algebraic number theory. The careful exclusion of units ($\pm 1$) from the set of primes ensures this uniqueness, creating a clean, unambiguous factorization system.
+
+We emphasize from the outset: this paper does not seek to revise or correct classical number theory. The standard framework remains perfectly suited for its intended purposes. Instead, we propose a complementary system designed to address a different class of problems—specifically, the mathematical modeling of quantum mechanical phenomena.
+
+\subsection{Motivation from Quantum Mechanics}
+
+Quantum mechanics reveals that physical reality operates differently from classical intuition. A quantum system exists in a superposition of states until measurement collapses it to a single outcome. This fundamental non-uniqueness in nature suggests that a mathematical framework incorporating similar properties might provide insights into quantum phenomena.
+
+Consider the act of factorization itself. In classical number theory, 6 has exactly one prime factorization: $2 \times 3$. But what if we view factorization through a quantum lens? What if the "measurement" of factorization could yield different but related results, just as measuring a quantum system can yield different outcomes from the same initial state?
+
+\subsection{Physics-Prime Factorization: A New Tool}
+
+We introduce Physics-Prime Factorization (PPF) as a mathematical framework that embraces factorization non-uniqueness as a feature rather than a flaw. In PPF, -1 emerges naturally as a special type of prime—the "Sign Prime"—whose presence or absence fundamentally alters the factorization landscape of integers.
+
+This framework is not intended to replace classical number theory any more than quantum mechanics replaces classical mechanics. Instead, PPF provides a mathematical structure that naturally encodes concepts like superposition, state collapse, and the distinction between observed and unobserved systems.
+
+\section{Formal Framework}
+
+\subsection{Core Definitions}
+
+\begin{definition}[Physics-Prime (P-prime)]
+A non-zero integer $p$ is a \textbf{Physics-Prime} (or \textbf{P-prime}) if its only integer divisors are $\pm 1$ and $\pm p$.
+\end{definition}
+
+Under this definition, the set of P-primes divides naturally into two categories:
+
+\begin{definition}[Sign Prime and Magnitude Primes]
+\begin{itemize}
+    \item The \textbf{Sign Prime}: -1 (the unique negative P-prime)
+    \item The \textbf{Magnitude Primes}: 2, 3, 5, 7, 11, ... (the positive P-primes)
+\end{itemize}
+\end{definition}
+
+\begin{remark}
+Note that -2, -3, -5, etc., are not P-primes because they can be factored as $(-1) \times 2$, $(-1) \times 3$, $(-1) \times 5$, respectively. Only -1 lacks such a factorization, making it uniquely prime among negative integers.
+\end{remark}
+
+\subsection{The Factorization State Space}
+
+\begin{definition}[P-factorization]
+A \textbf{P-factorization} of an integer $n$ is any product of P-primes that equals $n$.
+\end{definition}
+
+\begin{definition}[Factorization State Space]
+For any non-zero integer $n$, its \textbf{factorization state space} $\mathcal{S}(n)$ is the set of all distinct P-factorizations of $n$, where factorizations are considered distinct if they differ in their multiset of factors.
+\end{definition}
+
+\begin{example}
+Consider the factorization state spaces for $n = 6$ and $n = -6$:
+\begin{align}
+\mathcal{S}(6) &= \{\{2, 3\}, \{-2, -3\}\} \\
+\mathcal{S}(-6) &= \{\{-1, 2, 3\}, \{2, -3\}, \{-2, 3\}\}
+\end{align}
+Note that $\mathcal{S}(-6)$ contains more states than $\mathcal{S}(6)$, a pattern that holds generally.
+\end{example}
+
+\subsection{Equivalence Classes and Canonical Forms}
+
+To manage the apparent redundancy in representations like $(-1) \times (-1) \times 2 \times 3 = 6$, we introduce equivalence classes:
+
+\begin{definition}[Factorization Equivalence]
+Two P-factorizations are \textbf{equivalent} if one can be obtained from the other by:
+\begin{enumerate}
+    \item Pairing Sign Primes: Replacing any even number of Sign Primes (-1) with the identity
+    \item Sign absorption: Transferring the sign from Sign Primes to Magnitude Primes
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Canonical P-factorization]
+A P-factorization is in \textbf{canonical form} if:
+\begin{enumerate}
+    \item It contains at most one Sign Prime (-1)
+    \item All signs are absorbed into Magnitude Primes where possible
+\end{enumerate}
+\end{definition}
+
+\section{The Extended Fundamental Theorem}
+
+\begin{theorem}[Extended Fundamental Theorem of Arithmetic (EFTA)]
+Every non-zero integer $n$ has a unique factorization state space $\mathcal{S}(n)$ consisting of all canonical P-factorizations. This state space is completely determined by:
+\begin{enumerate}
+    \item The sign of $n$
+    \item The standard prime factorization of $|n|$
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Let $n$ be a non-zero integer with $|n| = p_1^{a_1} p_2^{a_2} \cdots p_k^{a_k}$ where $p_i$ are standard primes.
+
+\textbf{Case 1:} $n > 0$
+The canonical P-factorizations of $n$ are obtained by distributing signs among the Magnitude Primes such that the total number of negative factors is even. This gives exactly $2^{k-1}$ distinct canonical factorizations.
+
+\textbf{Case 2:} $n < 0$
+The canonical P-factorizations of $n$ must include either:
+\begin{itemize}
+    \item One Sign Prime (-1) with all positive Magnitude Primes
+    \item An odd number of negative Magnitude Primes with no Sign Prime
+\end{itemize}
+This also yields exactly $2^{k-1}$ distinct canonical factorizations.
+
+The uniqueness of $\mathcal{S}(n)$ follows from the uniqueness of the standard prime factorization of $|n|$ and the deterministic rules for constructing canonical forms.
+\end{proof}
+
+\section{Quantum Mechanical Interpretation}
+
+\subsection{State Spaces and Superposition}
+
+The factorization state space $\mathcal{S}(n)$ provides a natural mathematical model for quantum superposition:
+
+\begin{definition}[Factorization Superposition]
+An integer $n$ exists in a \textbf{factorization superposition} represented by its state space $\mathcal{S}(n)$. Each canonical P-factorization in $\mathcal{S}(n)$ represents a possible "measurement outcome" of the factorization process.
+\end{definition}
+
+\subsection{The Collapse Mechanism}
+
+The transition from negative to positive integers models wave function collapse:
+
+\begin{proposition}[Sign Collapse]
+The multiplication of two negative integers (each with larger state spaces due to the Sign Prime) yields a positive integer with a more constrained state space. This models the quantum mechanical principle that the interaction of two unobserved systems can produce an observed outcome.
+\end{proposition}
+
+Mathematically:
+\begin{equation}
+(-a) \times (-b) = ab
+\end{equation}
+
+In terms of state spaces, if $|\mathcal{S}(-a)| = |\mathcal{S}(-b)| = 2^k$, then typically $|\mathcal{S}(ab)| \leq 2^k$, representing a reduction in the number of possible states.
+
+\subsection{Temporal Interpretation}
+
+Within the ITWCT framework, this mathematical structure maps to temporal concepts:
+
+\begin{align}
+\text{Past} &\leftrightarrow \text{Negative integers (uncollapsed states)} \\
+\text{Future} &\leftrightarrow \text{Negative integers (uncollapsed states)} \\
+\text{Present} &\leftrightarrow \text{Positive integers (collapsed states)}
+\end{align}
+
+The equation Past $\times$ Future = Present becomes $(-) \times (-) = (+)$, encoding how the interaction of two unobserved temporal regions creates the observed present.
+
+\section{Comparison with Classical Number Theory}
+
+\subsection{Preserving Classical Results}
+
+PPF contains classical number theory as a special case:
+
+\begin{theorem}[Classical Embedding]
+If we restrict attention to positive integers and consider only the principal factorization (all positive Magnitude Primes), PPF reduces exactly to classical prime factorization.
+\end{theorem}
+
+This ensures that all classical results remain valid within their domain of applicability.
+
+\subsection{Advantages of PPF}
+
+While classical number theory excels at providing unique factorizations, PPF offers:
+
+\begin{enumerate}
+    \item A natural framework for modeling quantum superposition
+    \item A mathematical basis for the sign asymmetry in physics
+    \item A connection between number theory and temporal structure
+    \item A richer algebraic structure for studying symmetries
+\end{enumerate}
+
+\section{Applications and Implications}
+
+\subsection{Quantum Computing}
+
+PPF provides a mathematical framework for understanding quantum algorithms:
+
+\begin{example}[Shor's Algorithm Reinterpreted]
+In PPF terms, Shor's algorithm exploits the larger factorization state space of quantum systems (analogous to negative integers in PPF) to find factors more efficiently than classical methods restricted to unique factorizations.
+\end{example}
+
+\subsection{Foundations of Mathematics}
+
+PPF suggests that the choice to exclude -1 from the primes, while mathematically convenient, may obscure deeper connections between number theory and physical reality.
+
+\subsection{Future Directions}
+
+Several research directions emerge from this framework:
+
+\begin{enumerate}
+    \item Developing PPF analogs of classical number-theoretic results
+    \item Exploring connections to modular forms and L-functions
+    \item Investigating applications in quantum information theory
+    \item Extending PPF to other number systems (Gaussian integers, p-adics)
+\end{enumerate}
+
+\section{Conclusion}
+
+Physics-Prime Factorization offers a complementary perspective to classical number theory, not as a replacement but as an extension designed for different purposes. By recognizing -1 as the Sign Prime and embracing factorization non-uniqueness, PPF creates a mathematical structure that naturally encodes quantum mechanical concepts.
+
+This framework demonstrates that the apparent tension between unique factorization and quantum superposition can be resolved by recognizing that different mathematical tools serve different purposes. Classical number theory remains supreme for applications requiring uniqueness and determinism. PPF provides a richer structure for modeling the non-unique, superposed nature of quantum reality.
+
+The introduction of the factorization state space $\mathcal{S}(n)$ and the Extended Fundamental Theorem of Arithmetic shows that we can have our cake and eat it too: we preserve a form of uniqueness (the state space itself) while allowing for the non-uniqueness (multiple factorizations) that mirrors physical reality.
+
+As we continue to explore the deep connections between mathematics and physics, frameworks like PPF remind us that sometimes the most profound insights come not from correcting what came before, but from building new structures that complement and extend our understanding.
+
+\section*{Acknowledgments}
+
+The author thanks the mathematical community for maintaining the elegant structure of classical number theory, which provides the foundation upon which extensions like PPF can be built. Special recognition goes to those who dare to see familiar concepts through new lenses.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{10}
+
+\bibitem{gauss1801}
+C. F. Gauss, \textit{Disquisitiones Arithmeticae}. Leipzig: Gerhard Fleischer, 1801.
+
+\bibitem{hardy1940}
+G. H. Hardy and E. M. Wright, \textit{An Introduction to the Theory of Numbers}. Oxford: Oxford University Press, 1940.
+
+\bibitem{dirac1930}
+P. A. M. Dirac, \textit{The Principles of Quantum Mechanics}. Oxford: Oxford University Press, 1930.
+
+\bibitem{vonneumann1932}
+J. von Neumann, \textit{Mathematische Grundlagen der Quantenmechanik}. Berlin: Springer, 1932.
+
+\bibitem{feynman1965}
+R. P. Feynman and A. R. Hibbs, \textit{Quantum Mechanics and Path Integrals}. New York: McGraw-Hill, 1965.
+
+\bibitem{penrose2004}
+R. Penrose, \textit{The Road to Reality}. London: Jonathan Cape, 2004.
+
+\bibitem{connes1994}
+A. Connes, \textit{Noncommutative Geometry}. San Diego: Academic Press, 1994.
+
+\bibitem{manin1980}
+Y. I. Manin, "Computable and non-computable," \textit{Soviet Radio}, Moscow, 1980.
+
+\bibitem{khinchin1964}
+A. Y. Khinchin, \textit{Continued Fractions}. Chicago: University of Chicago Press, 1964.
+
+\bibitem{lang2002}
+S. Lang, \textit{Algebra}, 3rd ed. New York: Springer-Verlag, 2002.
+
+\end{thebibliography}
+
+\end{document}
