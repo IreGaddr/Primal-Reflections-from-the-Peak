@@ -1,0 +1,125 @@
+look at the brimingham photon visualization and the IOT photon visualization. Then consider the following. these are the outputs of the python scripts.
+here's my hypothesis..if the universe really is doing number theory and is a facotrization engine for the present moment to expand. Then it has to handle infinities, else it hangs. Here's that final pi approximation..look at the denominator, and the numerator is highly composite..numerator=7970551486110867820230959948946399559680000000000000000000000000
+denominator=2537105336365993929377452691572004321164599930711915186541600717
+Approximation: 3.141592653589793238462643383279502884197169399375105820974944592387341614838136398879195556155161832
+Actual π: 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
+Difference: 7.95252085519274002511607308130447641E-65
+Correct digits: 64
+Error at universe scale in Planck lengths: 0.004329897418767218800314396126569099084488524397449659861841107993478751805872216945964590983477235956
+Error at universe scale in meters: 6.998218352569611222102144311547939240800000000000000000000000000000000000000000000000000000000000000E-38
+Take a moment to revel in the level of precision this offers for measurement.
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python3 denom.py
+Small factors found: [151]
+Remaining number: 16802022095139032644883792659417247160030463117297451566500667
+Remaining number has 62 digits
+Is the remaining factor likely prime? False
+Original denominator analysis:
+Number of digits: 64
+Is even? False
+Sum of digits: 274
+Digital root: 4
+360 mod 151 = 58
+151 * 2 = 302
+151 * 3 = 453
+360 - 151 = 209
+360 / 151 ≈ 2.384105960264901
+360 = 8 * 9 * 5
+151 relationship to 360 factors...
+151 - 1 = 150 = 150
+151 + 1 = 152 = 152
+No factors found up to 1 million
+151 - 1 = 150 = 2 × 3 × 5²
+151 + 1 = 152 = 2³ × 19
+Square root of remaining ≈ 4099026969311013275979730649088
+That's about 31 digits
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python3 factorcheck.py
+Attempting Pollard's rho factorization...
+FOUND FACTORIZATION!
+Factor 1: 65648263
+Factor 1 digits: 8
+Factor 2: 255940086261521232403114651478550881994097286584680109
+Factor 2 digits: 54
+Product check: True
+Checking if it's a perfect power...
+Proximity to perfect square:
+floor(sqrt(n))² = 16802022095139032644883792659415573712227152770748666091722596
+n - floor(sqrt(n))² = 1673447803310346548785474778071
+ceil(sqrt(n))² - n = 6524606135311680508628370513558
+Attempting Fermat's factorization (good if factors are close)...
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ 
+ *  History restored 
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python3 factor.py
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python3 factor.py
+Checking 65648263...
+Number: 65648263
+Digits: 8
+No small factors found (up to 10000)
+Miller-Rabin test (50 rounds): PRIME
+Fermat test (base 2): 2^65648262 ≡ 1 (mod 65648263)
+Check Fermat (base 3): 3^65648262 ≡ 1 (mod 65648263)
+==================================================
+Checking 255940086261521232403114651478550881994097286584680109...
+Number has 54 digits
+Running Miller-Rabin test with 100 rounds...
+Miller-Rabin test result: COMPOSITE
+Running additional primality tests for confidence...
+FAILED Fermat test with base 2: 2^(n-1) ≡ 165734544676534359508956068310120627479191823232187266 (mod n)
+==================================================
+SUMMARY:
+151: Known prime
+65648263: PRIME
+255940086261521232403114651478550881994097286584680109: COMPOSITE
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python 54.py
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ python3 54.py
+Starting factorization of 54-digit composite...
+============================================================
+Factoring 255940086261521232403114651478550881994097286584680109
+Number has 54 digits
+============================================================
+Trying trial division for small factors...
+Trial division: checked up to 1000001
+Trying Pollard's rho...
+Pollard's rho found factor: 1771507939697 (in 3.13s)
+Remaining: 144475833568828040349889455028108644473597
+Trying Pollard's p-1 method...
+p-1 method: checked up to 10000
+p-1 method: checked up to 20000
+p-1 method: checked up to 30000
+p-1 method: checked up to 40000
+p-1 method: checked up to 50000
+p-1 method: checked up to 60000
+p-1 method: checked up to 70000
+p-1 method: checked up to 80000
+p-1 method: checked up to 90000
+Trying Fermat's factorization...
+sqrt(remaining) ≈ 380099767914725304887
+Fermat: checked 100000 values, current a = 380099767914725404889
+Fermat: checked 200000 values, current a = 380099767914725504889
+Fermat: checked 300000 values, current a = 380099767914725604889
+Fermat: checked 400000 values, current a = 380099767914725704889
+Fermat: checked 500000 values, current a = 380099767914725804889
+Fermat: checked 600000 values, current a = 380099767914725904889
+Fermat: checked 700000 values, current a = 380099767914726004889
+Fermat: checked 800000 values, current a = 380099767914726104889
+Fermat: checked 900000 values, current a = 380099767914726204889
+Trying simplified ECM...
+ECM: tried 0 curves
+ECM: tried 10 curves
+ECM: tried 20 curves
+ECM: tried 30 curves
+ECM: tried 40 curves
+Could not factor remaining number: 144475833568828040349889455028108644473597
+It has 42 digits
+============================================================
+FINAL FACTORIZATION:
+Factors found: [1771507939697, 144475833568828040349889455028108644473597]
+Verification: product = 255940086261521232403114651478550881994097286584680109
+Matches original? True
+Checking primality of factors...
+1771507939697 (13 digits): PRIME
+144475833568828040349889455028108644473597 (42 digits): PRIME
+ire@ire-ROG-Strix-G733PZV-G733PZV:~/code/projects/PRftP/docs$ 
+4 primes for 4 dimensions, 4 fold symmetry present in the IOT photon visualization
