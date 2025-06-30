@@ -10,7 +10,7 @@ This repository contains a mathematical and philosophical journey that fundament
 
 This work consists of several interconnected papers that must be read in a specific order. Like a mystery novel where early clues only make sense in retrospect, each document builds toward a revelation that recontextualizes everything that came before.
 
-### The Papers (In Order)
+### The Base Papers (In Order)
 
 1. **The Preface** - Your warning and invitation
 2. **The 360 Prime Pattern** - A curious mathematical discovery
@@ -38,11 +38,10 @@ The author describes this as a "labyrinth" - you must hold many seemingly discon
 2. **Embrace confusion** - It's part of the design
 3. **Take notes** - You'll want to track patterns
 4. **Reserve judgment** - The payoff requires patience
-5. **Expect 4-6 hours** - This is a significant intellectual journey
 
 ### If You Want Understanding Without the Journey
 
-**Read the guides** (`guide.md` files) - These provide bridges and explanations that make the concepts accessible without the labyrinthine experience. They contain spoilers that will fundamentally change how you experience the original works.
+**Read the guides** (`ppf_guide_with_ascii.md` file) - This provide bridges and explanations that make the concepts accessible without the labyrinthine experience. They contain spoilers that will fundamentally change how you experience the original works.
 
 ## Prerequisites
 
