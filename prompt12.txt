@@ -1,0 +1,8 @@
+Read base12v2.pdf in full detail (not just the excerpt from prompt 7).
+
+Deep dive questions:
+1. The critical gap between residues 261 and 285 forces the radius-12 bound. Calculate: why exactly 24? What would happen with radius 11.5?
+2. The triangular sequence with offset 181 appears again. Trace how this specific number propagates through the entire framework.
+3. The paper mentions "supplementary materials" with complete gap enumeration. What patterns might emerge from analyzing all 96 residue classes?
+
+Speculation: Is base-12 fundamental to reality (like the duodecimal system advocates claim), or is it emergent from deeper 360-based structure?

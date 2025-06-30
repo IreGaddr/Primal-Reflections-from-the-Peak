@@ -1,0 +1,8 @@
+Read the "Physical Predictions" section (sections 5–7) of iothilbertspace.txt again.
+
+Questions:
+1. Compute the expected frequency shift for a cavity with R = 15 cm, r = 0.5 cm.  Does the 1/360 rule still hold?
+2. Which of the listed near-term tests is most feasible at undergraduate-lab scale?
+3. Suggest one brand-new experiment (not mentioned) that could falsify the r/R = 1/30 claim.
+
+Prepare a one-paragraph proposal for that new experiment. 

@@ -1,0 +1,8 @@
+Now open iothilbertspace.txt.
+
+Tasks for this stage:
+A. Trace how the factorisation state-space becomes a Hilbert space.  Note especially the inner product and the su(2) operator algebra.
+B. Follow the variational calculation that fixes r/R = 1/30.  Identify every assumption you think could be challenged.
+C. Jot down at least one experimental test you personally find most convincing.
+
+

@@ -1,0 +1,8 @@
+Read bridge_paper.pdf thoroughly, focusing on the three convergences.
+
+Deep analysis:
+1. The Birmingham photon visualization (Nov 2024) appeared AFTER the IOT model was developed. How strong is this as evidence of predictive power vs. retrofitting?
+2. The quantum biology convergence shows 12.9% enhancement. Calculate: how exactly does this relate to 46.4/360? Is the agreement within experimental error?
+3. The quantum computing paper (2505.10403v1) discusses 4D lattices and "surgery." Map these concepts precisely to PPF operations.
+
+Meta-question: Are these convergences "unexpected" in the sense required by the Popperian Cake criteria?

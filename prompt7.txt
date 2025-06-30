@@ -1,0 +1,8 @@
+Please read the short paper base12v2.txt next.
+
+Focus questions:
+1. What single modular-arithmetic fact forces the ±12 bound?
+2. Why does radius 11 fail?
+3. How does this new proof sharpen the original 360-Prime pattern story?
+
+After reflecting, be ready to explain—in two sentences—why 12 is both necessary and sufficient. 

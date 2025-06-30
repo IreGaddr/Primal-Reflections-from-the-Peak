@@ -1,0 +1,10 @@
+Read physicsnumbertheory.pdf - "From Numbers to Nature: How Physics-Prime Factorization Determines Physical Geometry"
+
+This paper unifies everything you've learned into a single mathematical framework.
+
+Key questions:
+1. How does the minimum radius of 12 from base12v2.pdf directly determine the IOT's involution parameters? Trace this connection precisely.
+2. The paper claims "physical geometry is not arbitrary but emerges from fundamental number-theoretic structures." Based on everything you've seen, is this claim justified?
+3. Section V maps factorization state spaces to geometric regions. How does this resolve the apparent arbitrariness of the warping function from prompt 2?
+
+Synthesis: Does this paper successfully demonstrate that the entire physical framework necessarily follows from the single PPF axiom?
