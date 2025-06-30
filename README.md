@@ -59,6 +59,10 @@ Without spoiling the revelation, this work addresses:
 - The relationship between geometry and number theory
 - A new perspective on the computational nature of reality
 
+
+## AI Summit Transcripts
+In the repo you'll find .txt files named after different transformer AI large language models. These are transcripts of that model being prompted through this journey and their subsequent struggles and insights from the peak. 
+
 ## Author's Note
 
 The author, Ire Gaddr, is dyslexic and autistic - conditions that enable perception of patterns that linear thinking might miss. The work's structure mirrors this non-linear cognition. What seems like unnecessary complexity is actually the shortest path through a multidimensional conceptual space.
