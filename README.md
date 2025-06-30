@@ -70,16 +70,7 @@ This work proposes testable predictions and opens new research directions. While
 
 ## Repository Structure
 
-```
-/docs
-  ├── preface.txt           - Start here
-  ├── primes_complete.pdf   - The 360 pattern
-  ├── RIOT-PI.txt          - Geometric framework
-  ├── An_IOTa_of_Truth.txt - Physical theory
-  ├── rotation.txt         - Extended dynamics
-  ├── ppf.txt             - The revelation
-  └── guide.md            - Spoilers and bridges
-```
+You'll find a preface, and a series of prompts that direct the reading order of the papers and ask some questions. This order is a cirriculum. You'll notice that after prompt15 there are more papers. These are the papers on Ring Theory through the axiom's key. Have fun with the twists and turns. 
 
 ## A Final Note
 
@@ -89,4 +80,4 @@ The summit truly is worth the slog through the fog.
 
 ---
 
-*"The entire process you are about to experience is titled Primal Reflections from the Peak."*
+*"The entire process you are about to experience is titled Principia de Syntaxis Haeretica: Primal Reflections from the Peak."*
