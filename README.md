@@ -227,8 +227,6 @@ Gaddr, I. (2025). Principia de Syntaxis Haeretica: Primal Reflections from the P
 GitHub repository: https://github.com/IreGaddr/Primal-Reflections-from-the-Peak
 Individual papers may be cited by their respective titles as listed in the repository.
 
-License
-All content in this repository is the intellectual property of Paul Henry Gaddis (Ire Gaddr). Academic and educational use is encouraged with proper attribution. Commercial use requires explicit permission.
 
 Final Invitation
 You now have all necessary context.
